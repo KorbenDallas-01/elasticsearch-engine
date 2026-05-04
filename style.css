@@ -1,0 +1,80 @@
+/* Center the main container */
+body {
+    overflow-y: scroll;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #f0f2f5;
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container holding both the search and result containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Set a fixed or maximum width for both containers */
+.search-container, .results-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure both containers take up the full width */
+    max-width: 600px; /* Fixed maximum width to keep them the same */
+    min-width: 600px;
+	box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Style the search container */
+.search-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between elements */
+    margin-bottom: 20px; /* Space below the search container */
+}
+
+/* Style input fields and buttons */
+input[type="text"], select {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Results container styling */
+.results-container {
+    margin-top: 10px; /* Ensure there's space between the search and result containers */
+    overflow-wrap: break-word; /* Wrap long words or text */
+    word-wrap: break-word; /* Fallback for older browsers */
+    hyphens: auto; /* Optional, adds hyphens to break long words */
+    overflow: hidden; /* Ensure no overflow */
+    text-align: left;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
