@@ -204,30 +204,6 @@ Aplikacja wyszukuje dokumenty przy pomocy zapytania typu `bool should`, sprawdza
 ]
 ```
 
-## Możliwe usprawnienia
-
-- dodanie obsługi paginacji wyników,
-- dodanie wyboru indeksu Elasticsearch w konfiguracji,
-- dodanie obsługi błędów połączenia z Elasticsearch,
-- zabezpieczenie danych wejściowych użytkownika,
-- poprawienie generowania linków do plików PDF,
-- dodanie pliku `.env` dla konfiguracji środowiskowej,
-- dodanie pliku `.gitignore`,
-- przygotowanie automatycznej konwersji PDF do TXT.
-
-## Przykładowy `.gitignore`
-
-```gitignore
-/vendor/
-__pycache__/
-*.pyc
-.env
-.DS_Store
-```
-
-## Autor
-
-Projekt przygotowany jako prosta wyszukiwarka dokumentów oparta o Elasticsearch.
 
 ## Licencja
 
